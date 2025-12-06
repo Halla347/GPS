@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendSms">
+
+
+    <EditText
+        android:id="@+id/form_phone"
+        android:layout_width="match_parent"
+        android:layout_height="73sp"
+        android:autofillHints="Nr tel"
+        android:text="(650) 555-1212"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_phone"
+        android:id="@+id/send_sms"
+        android:text="wyslij sms">
+
+    </Button>
+</RelativeLayout>
