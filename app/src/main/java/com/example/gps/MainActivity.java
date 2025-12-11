@@ -314,7 +314,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             bestprovider.setText("best provider" + bp);
             longitude.setText("longitude" + location.getLongitude());
             latitude.setText("latitude" + location.getLatitude());
-            archivaldata.setText(archivaldata.getText() + " " + location.getLongitude() + " " + location.getLatitude());
+            archivaldata.setText(archivaldata.getText() + "\n " + location.getLongitude() + " " + location.getLatitude());
             amount+=1;
             Log.d("GPSA", amount + " pomiar"  + bp + " " + location.getLongitude() + " " + location.getLatitude());
         }
