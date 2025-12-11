@@ -309,7 +309,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     @Override
     public void onLocationChanged(@NonNull Location location) {
         bp = locationManager.getBestProvider(criteria, true);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)!= PackageManager.PERMISSION_GRANTED){
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)== PackageManager.PERMISSION_GRANTED){
             location = locationManager.getLastKnownLocation(bp);
             bestprovider.setText("best provider" + bp);
             longitude.setText("longitude" + location.getLongitude());
